@@ -5,7 +5,7 @@ import time
 
 def content2key(content:str):
     keywords=[]
-    driver = webdriver.ChromiumEdge()
+    driver = webdriver.Chrome()
     driver.get("https://www.cortical.io/freetools/extract-keywords")
     search_bar = driver.find_element(By.ID, 'text-input')
     search_bar.clear()
