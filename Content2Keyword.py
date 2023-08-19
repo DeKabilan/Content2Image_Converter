@@ -21,5 +21,7 @@ def content2key(content:str):
         keywords.append(results.text)
     driver.close()
     return keywords 
-    
-print(content2key("Python is the Best Language"))
+
+
+query=str(input("What is your Keyword: "))
+print(content2key(query))
